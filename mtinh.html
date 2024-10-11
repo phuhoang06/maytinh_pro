@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính </title>
+    <style>
+        #maytinh {
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        grid-gap: 10px;
+        width: max-content;
+        margin: auto;
+    }
+    input {
+        grid-column: span 4;
+        height: 50px;
+        text-align: right;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+<div id="maytinh">
+    <input type="text" id="hienthi" disabled />
+    <button onclick="themSo('1')">1</button>
+    <button onclick="themSo('2')">2</button>
+    <button onclick="themSo('3')">3</button>
+    <button onclick="chonPhepToan('+')">+</button>
+    <button onclick="themSo('4')">4</button>
+    <button onclick="themSo('5')">5</button>
+    <button onclick="themSo('6')">6</button>
+    <button onclick="chonPhepToan('-')">-</button>
+    <button onclick="themSo('7')">7</button>
+    <button onclick="themSo('8')">8</button>
+    <button onclick="themSo('9')">9</button>
+    <button onclick="chonPhepToan('*')">*</button>
+    <button onclick="xoaManHinh()">AC</button>
+    <button onclick="themSo('0')">0</button>
+    <button onclick="tinhKetQua()">=</button>
+    <button onclick="chonPhepToan('/')">/</button>
+</div>
+<script src="index.js"></script>
+
+
+</body>
+</html>
